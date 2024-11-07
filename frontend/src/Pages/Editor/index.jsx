@@ -1,7 +1,14 @@
-import React from 'react'
+import React from "react";
+import Topbar from "../../Components/Topbar";
+import MainSection from "./MainSection";
+import Bottombar from "../../Components/Bottombar";
 
 export default function index() {
   return (
-    <div>Editor</div>
-  )
+    <div className="h-screen w-screen overflow-hidden">
+      <Topbar />
+      <MainSection/>
+      <Bottombar/>
+    </div>
+  );
 }
